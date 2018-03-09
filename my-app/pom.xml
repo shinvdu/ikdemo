@@ -27,6 +27,7 @@
       <artifactId>lucene-core</artifactId>
       <version>3.0.0</version>
     </dependency>    
+
     <dependency> 
       <groupId>org.wltea.ik-analyzer</groupId> 
       <artifactId>ik-analyzer</artifactId> 
@@ -36,4 +37,29 @@
     </dependency>    
 
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>        
+        <configuration>
+          <!-- <mainClass>com.mycompany.app.IKAnalyzerDemo</mainClass> -->
+          <executable>java</executable>
+          <arguments>
+           <argument>-cp</argument>
+           <argument>/home/silas/workspace/my-app/target/classes:/home/silas/workspace/IKAnalyzer3.2.0Stable.jar:/home/silas/.m2/repository/org/apache/lucene/lucene-core/3.0.0/lucene-core-3.0.0.jar:/home/silas/workspace/my-app/IKAnalyzer3.2.0Stable.jar</argument>
+           <argument>com.mycompany.app.IKAnalyzerDemo</argument>
+         </arguments>          
+       </configuration>
+      </plugin>
+    </plugins>
+  </build>  
 </project>

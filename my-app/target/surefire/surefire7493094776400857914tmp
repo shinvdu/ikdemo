@@ -1,0 +1,26 @@
+#surefire
+#Fri Mar 09 11:25:27 CST 2018
+testClassesDirectory=/home/silas/workspace/my-app/target/test-classes
+classPathUrl.4=/home/silas/workspace/my-app/IKAnalyzer3.2.0Stable.jar
+classPathUrl.3=/home/silas/.m2/repository/org/apache/lucene/lucene-core/3.0.0/lucene-core-3.0.0.jar
+classPathUrl.2=/home/silas/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+useManifestOnlyJar=true
+classPathUrl.1=/home/silas/workspace/my-app/target/classes
+reportsDirectory=/home/silas/workspace/my-app/target/surefire-reports
+classPathUrl.0=/home/silas/workspace/my-app/target/test-classes
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=/home/silas/workspace/my-app/src/test/java
+surefireClassPathUrl.1=/home/silas/.m2/repository/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar
+surefireClassPathUrl.0=/home/silas/.m2/repository/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar
+runOrder=filesystem
+useSystemClassLoader=true
+excludes0=**/*$*
+isTrimStackTrace=true
+tc.0=com.mycompany.app.AppTest
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+runStatisticsFile=/home/silas/workspace/my-app/.surefire-6B431F6DBFA08EA6095C69119B61473EF9389F3B
+includes0=**/Test*.java
+childDelegation=false
